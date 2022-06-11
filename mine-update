@@ -1,0 +1,5 @@
+cp /home/user/mine/Duino-Coin*/Settings.cfg /home/user/duino-settings/
+sudo rm -rf /home/user/mine
+git clone https://github.com/revoxhere/duino-coin /home/user/mine
+mkdir /home/user/Duino-Coin*/
+cp /home/user/duino-settings/Settings.cfg /home/user/mine/Duino-Coin*/Settings.cfg

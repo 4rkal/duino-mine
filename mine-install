@@ -1,0 +1,13 @@
+echo "Creating settings folder"
+mkdir /home/user/duino-settings/
+echo "updating apt"
+sudo apt update
+echo "Installing requirements"
+sudo apt install python3 python3-pip git -y
+echo "Cloning repo"
+git clone https://github.com/revoxhere/duino-coin /home/user/mine
+cd /home/mine
+echo "installing dependencies"
+python3 -m pip install -r /home/user/mine/req.txt
+echo "running miner"
+sudo python3 /home/user/mine/PC_Miner.py
